@@ -69,7 +69,7 @@ def login():
             session.clear()
             session['user_id'] = user['id']
             #Si todo esta bien redireciona a la vista hello
-            return redirect(url_for('hello'))
+            return redirect(url_for('index'))
 
         flash(error)
 
